@@ -1,0 +1,110 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Header */
+header {
+    position: fixed; /* Fixe le header en haut */
+    top: 0;
+    left: 0;
+    width: 100%; /* S'assure que le header occupe toute la largeur */
+    z-index: 1000; /* Place le header au-dessus des autres éléments */
+    background-color: #333;
+    color: rgb(34, 32, 32);
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centre les liens horizontalement */
+    align-items: center; /* Aligne les liens verticalement */
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    position: fixed; /* Fixe le footer en bas */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* S'assure que le footer occupe toute la largeur */
+    z-index: 1000; /* Place le footer au-dessus des autres éléments si nécessaire */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Notes Page */
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f1f1f1;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+/* Conteneur principal */
+div {
+    margin: 120px auto; /* Ajoute un espace sous le header pour éviter qu'il chevauche le contenu */
+    max-width: 1200px; /* Limite la largeur du contenu */
+    padding-bottom: 80px; /* Ajoute un espace pour éviter que le contenu chevauche le footer */
+    padding: 0 1rem; /* Ajoute une marge intérieure à gauche et à droite */
+}
